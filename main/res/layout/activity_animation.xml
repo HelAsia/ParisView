@@ -11,16 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.introtoandroid.parisview.AnimationActivity">
 
-    <Button
-        android:text="Button"
-        android:textColor="@color/text_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/flag_anim2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
-        android:id="@+id/do_flagi" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,5 +22,24 @@
         android:layout_alignStart="@+id/do_flagi"
         android:layout_alignRight="@+id/do_flagi"
         android:layout_alignEnd="@+id/do_flagi" />
+
+    <Button
+        android:text="Turn on animation"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/do_flagi"
+        android:layout_below="@+id/flag_anim2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Go to activity 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_activity_3"
+        android:layout_below="@+id/do_flagi"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

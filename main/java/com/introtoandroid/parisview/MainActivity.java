@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Context contex;
     Button przycisk;
     Button przycisk2;
+    Button przycisk3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

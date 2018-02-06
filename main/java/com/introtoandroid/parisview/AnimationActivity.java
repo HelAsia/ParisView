@@ -1,5 +1,7 @@
 package com.introtoandroid.parisview;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +11,8 @@ import android.widget.ImageView;
 
 
 public class AnimationActivity extends AppCompatActivity {
+    Button przycisk;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,17 @@ public class AnimationActivity extends AppCompatActivity {
                 AnimationDrawable frameAnimation = (AnimationDrawable) iv.getBackground();
                 frameAnimation.start();
 
+            }
+        });
+
+        przycisk = (Button) findViewById(R.id.button_activity_3);
+        przycisk.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                context = getApplicationContext();
+
+                Intent intent = new Intent(context, Main2Activity.class);
+                startActivity(intent);
             }
         });
 
