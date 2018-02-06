@@ -17,16 +17,23 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     Context contex;
     Button przycisk;
+    Button przycisk2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView flagImageView = (ImageView)findViewById(R.id.ImageView01);
-        flagImageView.setImageResource(R.drawable.flag);
-        Animation an = AnimationUtils.loadAnimation(this,R.anim.spin);
-        flagImageView.startAnimation(an);
+        przycisk2 = (Button) findViewById(R.id.button2);
+        przycisk2.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                ImageView flagImageView = (ImageView)findViewById(R.id.ImageView01);
+                flagImageView.setImageResource(R.drawable.flag);
+                Animation an = AnimationUtils.loadAnimation(contex,R.anim.spin);
+                flagImageView.startAnimation(an);
+            }
+        });
 
         przycisk = (Button) findViewById(R.id.button);
        przycisk.setOnClickListener(new View.OnClickListener() {
@@ -36,9 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(contex, AnimationActivity.class);
                 startActivity(intent);
-
             }
         });
-
     }
 }
