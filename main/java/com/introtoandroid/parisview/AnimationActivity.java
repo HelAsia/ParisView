@@ -16,11 +16,11 @@ public class AnimationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_animation);
 
         final Button now = (Button) findViewById(R.id.do_flagi);
-        final ImageView iv = (ImageView)findViewById(R.id.flag_anim2);
+
         now.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-
+                ImageView iv = (ImageView)findViewById(R.id.flag_anim2);
                 iv.setBackgroundResource(R.drawable.juggle);
 
                 AnimationDrawable frameAnimation = (AnimationDrawable) iv.getBackground();
