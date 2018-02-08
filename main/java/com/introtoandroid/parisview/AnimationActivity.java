@@ -44,5 +44,16 @@ public class AnimationActivity extends AppCompatActivity {
             }
         });
 
+        przycisk = (Button) findViewById(R.id.cheese);
+        przycisk.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                context = getApplicationContext();
+
+                Intent intent = new Intent(context, Cheese.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

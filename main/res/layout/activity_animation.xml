@@ -42,4 +42,13 @@
         android:layout_below="@+id/do_flagi"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="Go to activity 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/cheese" />
+
 </RelativeLayout>
