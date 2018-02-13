@@ -3,11 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
     <Button
         android:id="@+id/button1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Fragment No.1"
+        android:text="Wybierz kolor owocu"
         android:onClick="selectFrag" />
 
     <Button
@@ -15,12 +16,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:onClick="selectFrag"
-        android:text="Fragment No.2" />
+        android:text="Wybierz owoc" />
 
     <fragment
         android:name="com.introtoandroid.parisview.FragmentOne"
         android:id="@+id/fragment_place"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button2"/>
 
 </LinearLayout>

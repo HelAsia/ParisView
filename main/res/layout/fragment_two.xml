@@ -6,11 +6,35 @@
     android:orientation="vertical"
     android:background="#ffff00">
 
-    <TextView
-        android:id="@+id/textView2"
+
+
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="This is fragment No.2"
-        android:textStyle="bold" />
+        android:layout_height="288dp"
+        android:id="@+id/radiogroup2"
+        android:layout_below="@+id/text2">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/button_fragment5"
+            android:text="Jabłko"
+            android:layout_weight="4"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/button_fragment6"
+            android:text="Gruszka"
+            android:layout_weight="5" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:id="@+id/button_fragment7"
+            android:text="Melon"
+            android:layout_weight="6" />
+
+    </RadioGroup>
 
 </LinearLayout>
