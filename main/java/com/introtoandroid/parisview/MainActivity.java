@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     Context contex;
     Button przycisk;
     Button przycisk2;
-    Button przycisk3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         przycisk = (Button) findViewById(R.id.button);
-       przycisk.setOnClickListener(new View.OnClickListener() {
+        przycisk.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 contex = getApplicationContext();
@@ -46,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        przycisk = (Button) findViewById(R.id.button_fragment);
+        przycisk.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                contex = getApplicationContext();
+
+                Intent intent = new Intent(contex, FragmentActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
