@@ -18,11 +18,17 @@
         android:onClick="selectFrag"
         android:text="Wybierz owoc" />
 
-    <fragment
-        android:name="com.introtoandroid.parisview.FragmentOne"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFrag"
+        android:text="Wybierz cyfre" />
+
+    <FrameLayout
         android:id="@+id/fragment_place"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="359dp"
         android:layout_below="@+id/button2"/>
 
 </LinearLayout>
