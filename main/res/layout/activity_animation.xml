@@ -43,7 +43,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Go to activity 4"
+        android:text="Go to example of fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

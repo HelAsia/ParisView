@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class Cheese extends AppCompatActivity {
+
     String name;
     String description;
 
@@ -52,5 +53,10 @@ public class Cheese extends AppCompatActivity {
                     return convertView;
                 }
             };
+        GridView cheeseGrid = new GridView(this);
+        setContentView(cheeseGrid);
+
+        cheeseGrid.setNumColumns(2);
+        cheeseGrid.setAdapter(cheeseAdapter);
     }
 }

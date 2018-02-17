@@ -50,7 +50,7 @@ public class AnimationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 context = getApplicationContext();
 
-                Intent intent = new Intent(context, Cheese.class);
+                Intent intent = new Intent(context, ExampleActivity.class);
                 startActivity(intent);
             }
         });
