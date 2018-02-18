@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class AnimationActivity extends AppCompatActivity {
     Button przycisk;
     Context context;
+    TextView textview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,5 +57,10 @@ public class AnimationActivity extends AppCompatActivity {
             }
         });
 
+        Counter counter = new Counter(5,6);
+        String results = Integer.toString(counter.getResults());
+
+        textview = (TextView)findViewById(R.id.counter);
+        textview.setText(results);
     }
 }

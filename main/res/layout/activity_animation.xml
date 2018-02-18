@@ -11,6 +11,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.introtoandroid.parisview.AnimationActivity">
 
+    <TextView
+        android:text="Results"
+        android:layout_below="@+id/cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/counter" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
