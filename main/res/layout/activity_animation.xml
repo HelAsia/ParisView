@@ -11,16 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.introtoandroid.parisview.AnimationActivity">
 
-    <TextView
-        android:text="Results"
-        android:layout_below="@+id/cheese"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/counter" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,32 +23,60 @@
         android:layout_alignRight="@+id/do_flagi"
         android:layout_alignEnd="@+id/do_flagi" />
 
-    <Button
-        android:text="Turn on animation"
-        android:textColor="@color/text_color"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:id="@+id/do_flagi"
-        android:layout_below="@+id/flag_anim2"
-        android:layout_centerHorizontal="true" />
+        android:inputType="textPersonName"
+        android:text="Enter first number"
+        android:ems="10"
+        android:id="@+id/numberOneEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_activity_3"
+        android:layout_alignEnd="@+id/button_activity_3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter second number"
+        android:ems="10"
+        android:layout_below="@+id/numberOneEditText"
+        android:layout_alignRight="@+id/numberOneEditText"
+        android:layout_alignEnd="@+id/numberOneEditText"
+        android:id="@+id/numberTwoEditText" />
 
     <Button
         android:text="Go to activity 3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:id="@+id/button_activity_3"
-        android:layout_below="@+id/do_flagi"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Turn on animation"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/do_flagi"
+        android:layout_above="@+id/button_activity_3"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Go to example of fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:id="@+id/cheese" />
+        android:id="@+id/cheese"
+        android:layout_below="@+id/flag_anim2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Show sum of Your equation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberTwoEditText"
+        android:layout_alignLeft="@+id/numberTwoEditText"
+        android:layout_alignStart="@+id/numberTwoEditText"
+        android:id="@+id/resultActionButton" />
 
 </RelativeLayout>

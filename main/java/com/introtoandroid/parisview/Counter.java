@@ -5,17 +5,31 @@ package com.introtoandroid.parisview;
  */
 
 public class Counter {
-    int results;
+    String resultsString;
+    int numberOneInt;
+    int numberTwoInt;
+    int resultsInt;
 
-    public Counter (int numberOne, int numberTwo){
-        this.results = numberOne + numberTwo;
+
+    public Counter (String numberOne, String numberTwo){
+
+        this.numberOneInt = Integer.parseInt(numberOne);
+        this.numberTwoInt = Integer.parseInt(numberTwo);
+
+        this.resultsInt = this.numberOneInt + this.numberTwoInt;
+        this.resultsString = Integer.toString(this.resultsInt);
     }
 
-    public void setResults(int numberOne, int numberTwo){
-        this.results = numberOne + numberTwo;
+    public void setResults(String numberOne, String numberTwo){
+        this.numberOneInt = Integer.parseInt(numberOne);
+        this.numberTwoInt = Integer.parseInt(numberTwo);
+
+        this.resultsInt = this.numberOneInt + this.numberTwoInt;
+        this.resultsString = Integer.toString(this.resultsInt);
     }
 
-    public int getResults() {
-        return results;
+    public String getResults() {
+
+        return resultsString;
     }
 }

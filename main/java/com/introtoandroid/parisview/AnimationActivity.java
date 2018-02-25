@@ -14,7 +14,6 @@ import android.widget.TextView;
 public class AnimationActivity extends AppCompatActivity {
     Button przycisk;
     Context context;
-    TextView textview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,10 +56,26 @@ public class AnimationActivity extends AppCompatActivity {
             }
         });
 
-        Counter counter = new Counter(5,6);
-        String results = Integer.toString(counter.getResults());
+        przycisk = (Button) findViewById(R.id.resultActionButton);
+        przycisk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context = getApplicationContext();
+                Intent newScreen = new Intent (context, ResultsActivity.class);
 
-        textview = (TextView)findViewById(R.id.counter);
-        textview.setText(results);
+                TextView numberOneText = (TextView) findViewById(R.id.numberOneEditText);
+                String numberOneString = numberOneText.getText().toString();
+
+                TextView numberTwoText = (TextView) findViewById(R.id.numberTwoEditText);
+                String numberTwoString = numberTwoText.getText().toString();
+
+                newScreen.putExtra("one",numberOneString);
+                newScreen.putExtra("two",numberTwoString);
+
+                startActivity(newScreen);
+            }
+        });
+
+
     }
 }

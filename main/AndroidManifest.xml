@@ -19,7 +19,8 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".Cheese" />
         <activity android:name=".FragmentActivity" />
-        <activity android:name=".ExampleActivity"></activity>
+        <activity android:name=".ExampleActivity" />
+        <activity android:name=".ResultsActivity"></activity>
     </application>
 
 </manifest>
