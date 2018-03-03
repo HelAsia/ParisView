@@ -67,4 +67,14 @@
         android:layout_marginBottom="27dp"
         android:id="@+id/button_fragment" />
 
+    <Button
+        android:text="Swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_swipe"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/button_fragment"
+        android:layout_alignLeft="@+id/button_fragment"
+        android:layout_alignStart="@+id/button_fragment" />
+
 </RelativeLayout>

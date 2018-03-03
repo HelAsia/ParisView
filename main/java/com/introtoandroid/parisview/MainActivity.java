@@ -57,6 +57,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        przycisk = (Button) findViewById(R.id.button_swipe);
+        przycisk.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                contex = getApplicationContext();
+
+                Intent intent = new Intent(contex, SwipeFirstFragment.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

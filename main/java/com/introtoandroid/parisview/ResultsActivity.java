@@ -21,9 +21,7 @@ public class ResultsActivity extends AppCompatActivity {
         String two = bundle.getString("two");
 
         Counter counter = new Counter(one,two);
-        //String results = Integer.toString(counter.getResults());
-
-
+   
         resultTextView = (TextView)findViewById(R.id.resultTextView);
         resultTextView.setText(counter.getResults());
     }
