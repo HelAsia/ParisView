@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 contex = getApplicationContext();
 
-                Intent intent = new Intent(contex, SwipeFirstFragment.class);
+                Intent intent = new Intent(contex, SwipeActivity.class);
                 startActivity(intent);
             }
         });
