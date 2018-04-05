@@ -53,7 +53,5 @@ public class SwipeActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return "Page " + position;
         }
-
     }
-
 }

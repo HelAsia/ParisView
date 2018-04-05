@@ -19,5 +19,4 @@ public class ExampleActivity extends FragmentActivity implements ToolbarFragment
 
         textFragment.changeTextProperties(fontsize, text);
     }
-
 }

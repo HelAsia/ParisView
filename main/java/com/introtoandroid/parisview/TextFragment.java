@@ -33,5 +33,4 @@ public class TextFragment extends Fragment {
         textview.setTextSize(fontsize);
         textview.setText(text);
     }
-
 }
